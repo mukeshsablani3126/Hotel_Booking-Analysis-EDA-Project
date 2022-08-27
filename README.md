@@ -12,25 +12,7 @@ In this study we have sample data about the hotel industry that is not processed
 
 ## Exploratory Data Analysis:-
 
-First step is to import libraries such as NumPy, pandas, matplotlib, seaborn.Then load the raw dataset. This data has many unprocessed values which cannot be considered for the study. Here is the workflow of correcting it for our analysis.
-
-## Data Cleaning:-
-a. Handling Null Values
-Company Id and Agent Id: - These columns have null values of 93% and 15% respectively. Hence, these columns are dropped.
-Country: - This has null values less than 5% thus the null values are filled with the mode value.
-Children and babies: - There are only 4 null values so the null value is filled with mean
- 
- b. Handling Outliers
-An outlier is an extremely high or extremely low data point relative to the nearest data point and the rest of the neighboring co-existing values in a data graph or dataset we work with. 
-We have used the Interquartile range method to handle outliers. To find the interquartile range (IQR), ​we first find the median (middle value) of the lower and upper half of the data. These values are quartile 1 (Q1) and quartile 3 (Q3). The IQR is the difference between Q3 and Q1.
-     2. Data Manipulation: - Creating new columns
-Kids= Children +babies
-Total stay= stays_in_weekend_nights+ stays_in_week_nights
-Guest= Adults+kids
-Revenue= stay of non-cancelled guests * ADR
-
-
-
+In this study we have sample data about the hotel industry that is not processed for use. Unprocessed data gives inaccurate results. To process this data is called data cleaning. We have cleaned the data by handling null values, outliers and dropping unwanted columns.
 
 
 ## Data study :-
