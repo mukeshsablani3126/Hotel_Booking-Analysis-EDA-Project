@@ -10,16 +10,19 @@ This data set contains booking information for a city hotel and a resort hotel, 
 
 In this study we have sample data about the hotel industry that is not processed for use. Unprocessed data gives inaccurate results. To process this data is called data cleaning. We have cleaned the data by handling null values, outliers and dropping unwanted columns.
 
-# Data Cleaning
-Handling Null Values
+## Data Cleaning
+### Handling Null Values
 Company Id and Agent Id: - These columns have null values of 93% and 15% respectively. Hence, these columns are dropped.
 
 Country: - This has null values less than 5% thus the null values are filled with the mode value.
 
 Children and babies: - There are only 4 null values so the null value is filled with mean
 
+### Handling Outliers
+An outlier is an extremely high or extremely low data point relative to the nearest data point and the rest of the neighboring co-existing values in a data graph or dataset we work with. We have used the Interquartile range method to handle outliers. To find the interquartile range (IQR), ​we first find the median (middle value) of the lower and upper half of the data. These values are quartile 1 (Q1) and quartile 3 (Q3). The IQR is the difference between Q3 and Q1.
 
-## Data study :-
+
+## Data study 
 i) UNIVARIATE ANALYSIS: 
 Univariate analysis is the simplest form of analyzing data i.e study of one variable. Its major purpose is to describe; distribution of single data, and find patterns in the data.
 
